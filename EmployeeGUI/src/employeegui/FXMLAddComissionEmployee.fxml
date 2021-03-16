@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="employeegui.FXMLAddComissionEmployeeController">
+   <children>
+      <Polygon fill="DODGERBLUE" layoutX="450.0" layoutY="757.0" points="-50.0, 47.0, 350.0, 47.0, 350.0, -258.0" stroke="BLACK" strokeType="INSIDE" />
+      <Polygon fill="DODGERBLUE" layoutX="57.0" layoutY="477.0" points="-57.0, 327.0, 343.0, 327.0, -57.0, 12.0" stroke="BLACK" strokeType="INSIDE" />
+      <Polygon fill="DODGERBLUE" layoutX="750.0" layoutY="347.0" points="-336.0, -347.0, 50.0, -34.0, 50.0, -347.0" stroke="BLACK" strokeType="INSIDE" />
+      <Polygon fill="DODGERBLUE" layoutX="50.0" layoutY="316.0" points="-50.0, -36.0, 364.0, -316.0, -50.0, -316.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="135.0" layoutY="71.0" text="Welcome to Comisson Employee" textFill="#a81e1e">
+         <font>
+            <Font name="System Bold Italic" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="235.0" layoutY="177.0" text="ID" textFill="#37b4d0">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="185.0" layoutY="230.0" text="NAME" textFill="#37b4d0">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="93.0" layoutY="288.0" text="DESIGNATION" textFill="#37b4d0">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="65.0" layoutY="340.0" text="COMISSION AMT" textFill="#37b4d0">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="201.0" layoutY="395.0" text="SALE" textFill="#37b4d0">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="idTF" layoutX="282.0" layoutY="173.0" prefHeight="31.0" prefWidth="309.0">
+         <font>
+            <Font size="18.0" />
+         </font></TextField>
+      <TextField fx:id="nameTF" layoutX="282.0" layoutY="228.0" prefHeight="31.0" prefWidth="309.0">
+         <font>
+            <Font size="18.0" />
+         </font></TextField>
+      <TextField fx:id="desgTF" layoutX="282.0" layoutY="284.0" prefHeight="31.0" prefWidth="309.0">
+         <font>
+            <Font size="18.0" />
+         </font></TextField>
+      <TextField fx:id="caTF" layoutX="282.0" layoutY="338.0" prefHeight="31.0" prefWidth="309.0">
+         <font>
+            <Font size="18.0" />
+         </font></TextField>
+      <TextField fx:id="salTF" layoutX="282.0" layoutY="393.0" prefHeight="31.0" prefWidth="309.0">
+         <font>
+            <Font size="18.0" />
+         </font></TextField>
+      <Button fx:id="addCEClearBtn" defaultButton="true" layoutX="282.0" layoutY="458.0" mnemonicParsing="false" onAction="#clearAction" prefHeight="50.0" prefWidth="100.0" text="CLEAR">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Button>
+      <Button fx:id="addCESubmitBtn" defaultButton="true" layoutX="491.0" layoutY="458.0" mnemonicParsing="false" onAction="#submitAction" prefHeight="50.0" prefWidth="100.0" text="SUBMT">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Button>
+      <Button fx:id="addCEBackBtn" defaultButton="true" layoutX="63.0" layoutY="696.0" mnemonicParsing="false" onAction="#backAction" prefHeight="50.0" prefWidth="100.0" text="BACK">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font></Button>
+      <Label fx:id="label1" alignment="CENTER" layoutX="273.0" layoutY="536.0" prefHeight="21.0" prefWidth="342.0" textFill="#2d27da">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="label2" alignment="CENTER" layoutX="271.0" layoutY="589.0" prefHeight="21.0" prefWidth="342.0" textFill="#2d27da">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label disable="true" layoutX="670.0" layoutY="142.0" text="F" textFill="#bbda20">
+         <font>
+            <Font name="System Bold Italic" size="72.0" />
+         </font>
+      </Label>
+      <Label disable="true" layoutX="661.0" layoutY="232.0" text="O" textFill="#bbda20">
+         <font>
+            <Font name="System Bold Italic" size="72.0" />
+         </font>
+      </Label>
+      <Label disable="true" layoutX="665.0" layoutY="323.0" text="R" textFill="#bbda20">
+         <font>
+            <Font name="System Bold Italic" size="72.0" />
+         </font>
+      </Label>
+      <Label disable="true" layoutX="658.0" layoutY="420.0" text="M" textFill="#bbda20">
+         <font>
+            <Font name="System Bold Italic" size="72.0" />
+         </font>
+      </Label>
+      <Button fx:id="backHomeBtn" defaultButton="true" layoutX="638.0" layoutY="697.0" mnemonicParsing="false" onAction="#backHomeAction" prefHeight="50.0" prefWidth="100.0" text="Home">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

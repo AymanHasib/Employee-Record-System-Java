@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.QuadCurve?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="employeegui.FXMLAddEmployeeController">
+   <children>
+      <QuadCurve controlX="-260.0" controlY="620.0" disable="true" endX="444.0" endY="-516.0" fill="DODGERBLUE" layoutX="365.0" layoutY="516.0" opacity="0.72" startX="444.0" startY="32.0" stroke="BLACK" strokeType="INSIDE" />
+      <Button fx:id="addSEBtn" defaultButton="true" layoutX="41.0" layoutY="311.0" onAction="#addSEAction" prefHeight="100.0" prefWidth="150.0" text="Add Salaried Employee" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Button>
+      <Button fx:id="addHEBtn" defaultButton="true" layoutX="327.0" layoutY="311.0" onAction="#addHEAction" prefHeight="100.0" prefWidth="150.0" text="Add Hourly Employee" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Button>
+      <Button fx:id="addCEBtn" defaultButton="true" layoutX="604.0" layoutY="311.0" onAction="#addCEAction" prefHeight="100.0" prefWidth="150.0" text="Add Comission Employee" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Button>
+      <Button fx:id="addEmpBackBtn" defaultButton="true" layoutX="87.0" layoutY="686.0" mnemonicParsing="false" onAction="#backAction" prefHeight="50.0" prefWidth="100.0" text="BACK">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font></Button>
+      <Label layoutX="223.0" layoutY="43.0" text="Add Employee System" textFill="#a83131">
+         <font>
+            <Font name="System Bold Italic" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="38.0" layoutY="423.0" text="Salaried Employee">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="328.0" layoutY="423.0" text="Hourly Employee">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="593.0" layoutY="423.0" text="Comission Employee">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="300.0" layoutY="149.0" text="Select Your Option" textFill="#971b1b">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

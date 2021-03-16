@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Polyline?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="employeegui.FXMLIncreseSalaryController">
+   <children>
+      <Polyline fill="CHARTREUSE" layoutX="418.0" layoutY="40.0" points="-50.0, -40.0, 382.0, -40.0, -18.0, 760.0, -418.0, -40.0" strokeType="INSIDE" />
+      <Label layoutX="107.0" layoutY="91.0" text="Welcome to Increse Employee Salary">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="343.0" layoutY="178.0" text="Enter Your Id" textFill="#030303">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="238.0" layoutY="253.0" text="ID">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="133.0" layoutY="367.0" text="INCREMENT">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="idTF" layoutX="288.0" layoutY="255.0" prefHeight="31.0" prefWidth="283.0" />
+      <TextField fx:id="salaryTF" layoutX="288.0" layoutY="369.0" prefHeight="31.0" prefWidth="283.0" />
+      <Button fx:id="addSEClearBtn" defaultButton="true" layoutX="288.0" layoutY="428.0" mnemonicParsing="false" onAction="#clearAction" prefHeight="50.0" prefWidth="100.0" text="CLEAR">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Button>
+      <Button fx:id="addSESubmitBtn" defaultButton="true" layoutX="471.0" layoutY="428.0" mnemonicParsing="false" onAction="#submitAction" prefHeight="50.0" prefWidth="100.0" text="SUBMIT">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Button>
+      <Button fx:id="addSEBackBtn" defaultButton="true" layoutX="93.0" layoutY="698.0" mnemonicParsing="false" onAction="#backAction" prefHeight="50.0" prefWidth="100.0" text="BACK">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Button>
+      <Label layoutX="321.0" layoutY="317.0" text="Enter Your Amount">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="label1" alignment="CENTER" layoutX="271.0" layoutY="522.0" prefHeight="35.0" prefWidth="333.0" textFill="#2d27da">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="label2" alignment="CENTER" layoutX="237.0" layoutY="579.0" prefHeight="27.0" prefWidth="397.0" textFill="#2d27da">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="backSEBtn" defaultButton="true" layoutX="375.0" layoutY="693.0" mnemonicParsing="false" onAction="#backSEAction" prefHeight="60.0" prefWidth="110.0" text="Salaried Employee" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="backHEBtn" defaultButton="true" layoutX="521.0" layoutY="693.0" mnemonicParsing="false" onAction="#backHEAction" prefHeight="60.0" prefWidth="110.0" text="Hourly Employee" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="backCEBtn" defaultButton="true" layoutX="657.0" layoutY="693.0" mnemonicParsing="false" onAction="#backCEAction" prefHeight="60.0" prefWidth="110.0" text="Comission Employee" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
